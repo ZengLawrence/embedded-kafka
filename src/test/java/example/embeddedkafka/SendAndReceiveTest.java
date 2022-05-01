@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.fail;
 
 @SpringBootTest
 @EmbeddedKafka(topics = "my-topic", bootstrapServersProperty = "spring.kafka.bootstrap-servers")
