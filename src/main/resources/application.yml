@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: embedded-kafka
+  profiles:
+    active: local
