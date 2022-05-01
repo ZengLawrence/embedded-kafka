@@ -12,7 +12,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
 @SpringBootTest
-@EmbeddedKafka(topics = "my-topic", bootstrapServersProperty = "spring.kafka.bootstrap-servers")
+@EmbeddedKafka
 class SendAndReceiveTest {
 
     @Autowired
