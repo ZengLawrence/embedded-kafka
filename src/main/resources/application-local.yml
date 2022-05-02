@@ -2,4 +2,6 @@ spring:
   kafka:
     bootstrap-servers: ${spring.embedded.kafka.brokers}
     consumer:
+      # there is no committed position (which would be the case when the group is first initialized)
+      # so set to earliest
       auto-offset-reset: earliest
