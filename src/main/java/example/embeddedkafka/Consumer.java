@@ -12,7 +12,7 @@ import java.util.concurrent.CountDownLatch;
 public class Consumer {
 
 
-    private @Getter final CountDownLatch latch = new CountDownLatch(1);
+    private final @Getter CountDownLatch latch = new CountDownLatch(1);
 
     private @Getter String lastMessage;
 
