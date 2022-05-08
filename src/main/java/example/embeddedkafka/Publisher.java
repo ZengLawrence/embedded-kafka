@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class Publisher {
 
-    @NonNull private KafkaTemplate<String, String> kafkaTemplate;
+    @NonNull final private KafkaTemplate<String, String> kafkaTemplate;
 
     public void send(String message) {
         this.kafkaTemplate.send("my-topic", message);
